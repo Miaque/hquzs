@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>登录</title>
+
+    <!-- Bootstrap -->
+    <link href="static/stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="static/stylesheets/font-awesome/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="static/stylesheets/custom.css" rel="stylesheet">
+</head>
+
+<body style="background:#F7F7F7;">
+<div class="">
+    <a class="hiddenanchor" id="toregister"></a>
+    <a class="hiddenanchor" id="tologin"></a>
+
+    <div id="wrapper" ng-controller="myController">
+        <h2>You are Logged In as <%= username %></h2>
+        <a href="/logout">logout</a>
+        <hr>
+        <a href="/user">Eite User</a>
+        <hr>
+    </div>
+</div>
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="/static/js/my_app.js"></script>
+</body>
+</html>

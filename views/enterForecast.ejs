@@ -1,0 +1,500 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>录取预测</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Bootstrap -->
+    <link href="static/stylesheets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome字体 -->
+    <link href="static/stylesheets/font-awesome.min.css" rel="stylesheet">
+
+    <!-- 自定义 -->
+    <link href="static/stylesheets/custom.css" rel="stylesheet">
+
+    <!--Modernizr-->
+    <script src="static/javascripts/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- Respond.js for IE 8 or less only -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="static/javascripts/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="#" class="site_title"><img src="static/images/logo.png" width="200" height="50"> </a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!-- 左侧菜单 -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>简介</h3>
+                                <ul class="nav side-menu">
+                                    <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">主页</a>
+                                            </li>
+                                            <!--<li><a href="index2.html">Dashboard2</a>
+                                            </li>
+                                            <li><a href="index3.html">Dashboard3</a>
+                                            </li>-->
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-edit"></i> 学院简介 <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">学院一</a>
+                                            </li>
+                                            <li><a href="#">学院二</a>
+                                            </li>
+                                            <li><a href="#">学院三</a>
+                                            </li>
+                                            <li><a href="#">学院四</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-desktop"></i> 专业简介 <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">专业一</a>
+                                                </li>
+                                                <li><a href="#">专业二</a>
+                                                </li>
+                                                <li><a href="#">专业三</a>
+                                                </li>
+                                                <li><a href="#">专业四</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-table"></i> 特色简介 <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">宿舍情况</a>
+                                            </li>
+                                            <li><a href="#">学院风光</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="menu_section">
+                            <h3>招生</h3>
+                                <ul class="nav side-menu">
+                                    <li><a><i class="fa fa-bug"></i> 招生简介 <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="/enrolInfo">招生简介</a>
+                                            </li>
+                                            <li><a href="#">招生简介</a>
+                                            </li>
+                                            <li><a href="#">招生简介</a>
+                                            </li>
+                                            <li><a href="#">招生简介</a>
+                                            </li>
+                                            <li><a href="#">招生简介</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-windows"></i> 专业推荐 <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="/majorRecommend">专业推荐</a>
+                                            </li>
+                                            <li><a href="#">other</a>
+                                            </li>
+                                            <li><a href="#">other</a>
+                                            </li>
+                                            <li><a href="#">other</a>
+                                            </li>
+                                            <li><a href="#">other</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-sitemap"></i> 录取预测 <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="/enterForecast">录取预测</a>
+                                                <li><a>录取详情<span class="fa fa-chevron-down"></span></a>
+                                                    <ul class="nav child_menu">
+                                                        <li class="sub_menu"><a href="level2.html">定向</a>
+                                                        </li>
+                                                        <li><a href="#level2_1">非定向</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            <li><a href="#level1_2">录取查询</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="menu_section">
+                            <h3>设置</h3>
+                                <ul class="nav side-menu">
+                                    <li><a><i class="fa fa-bug"></i> 用户信息 <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="#">修改账户</a>
+                                            </li>
+                                            <li><a href="#">注销账户</a>
+                                            </li>
+                                            <li><a href="#">other</a>
+                                            </li>
+                                            <li><a href="#">other</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                <!-- /.左侧菜单 -->
+
+                <!-- /左侧菜单底部按钮 -->
+                <div class="sidebar-footer hidden-small">
+                    <a data-toggle="tooltip" data-placement="top" title="Settings">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Lock">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Logout">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- /.左侧菜单底部按钮 -->
+            </div>
+        </div>
+
+        <!-- 顶部导航栏 -->
+        <div class="top_nav">
+
+            <div class="nav_menu">
+                <nav class="" role="navigation">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img src="static/images/img.jpg" alt="">Miaque
+                                <span class=" fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <li><a href="javascript:;">  Profile</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Help</a>
+                                </li>
+                                <li><a href="/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li role="presentation" class="dropdown">
+                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge bg-green">6</span>
+                            </a>
+                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                <li>
+                                    <a>
+                        <span class="image">
+                                          <img src="static/images/img.jpg" alt="Profile Image" />
+                                      </span>
+                        <span>
+                                          <span>Miaque</span>
+                        <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                      </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                        <span class="image">
+                                          <img src="static/images/img.jpg" alt="Profile Image" />
+                                      </span>
+                        <span>
+                                          <span>Miaque</span>
+                        <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                      </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                        <span class="image">
+                                          <img src="static/images/img.jpg" alt="Profile Image" />
+                                      </span>
+                        <span>
+                                          <span>Miaque</span>
+                        <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                      </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                        <span class="image">
+                                          <img src="static/images/img.jpg" alt="Profile Image" />
+                                      </span>
+                        <span>
+                                          <span>Miaque</span>
+                        <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                                      </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="text-center">
+                                        <a href="inbox.html">
+                                            <strong>See All Alerts</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <!-- /.顶部导航栏 -->
+
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+
+            <!-- top tiles -->
+            <div class="row tile_count">
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Your City</span>
+                    <h2>您目前所在的城市</h2>
+                    <select class="form-control">
+                        <option>厦门</option>
+                        <option>北京</option>
+                        <option>上海</option>
+                        <option>广州</option>
+                        <option>香港</option>
+                    </select>
+                </div>
+            </div>
+            <!-- /top tiles -->
+
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>录取预测 <small>分析</small></h2>
+                            <ul class="nav navbar-right panel_toolbox">
+                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Settings 1</a>
+                                        </li>
+                                        <li><a href="#">Settings 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+
+
+                            <!-- Smart Wizard -->
+                            <p>以下分析结果属于概率事件.</p>
+                            <div id="wizard" class="form_wizard wizard_horizontal">
+                                <ul class="wizard_steps">
+                                    <li>
+                                        <a href="#step-1">
+                                            <span class="step_no">1</span>
+                            <span class="step_descr">
+                                              Step 1<br />
+                                              <small>Step 1 description</small>
+                                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-2">
+                                            <span class="step_no">2</span>
+                            <span class="step_descr">
+                                              Step 2<br />
+                                              <small>Step 2 description</small>
+                                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-3">
+                                            <span class="step_no">3</span>
+                            <span class="step_descr">
+                                              Step 3<br />
+                                              <small>Step 3 description</small>
+                                          </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-4">
+                                            <span class="step_no">4</span>
+                            <span class="step_descr">
+                                              Step 4<br />
+                                              <small>Step 4 description</small>
+                                          </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div id="step-1">
+                                    <form class="form-horizontal form-label-left">
+
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Middle Name / Initial</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div id="gender" class="btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                        <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp;
+                                                    </label>
+                                                    <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                        <input type="radio" name="gender" value="female"> Female
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Date Of Birth <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                            </div>
+                                        </div>
+
+                                    </form>
+
+                                </div>
+                                <div id="step-2">
+                                    <h2 class="StepTitle">Step 2 Content</h2>
+                                    <p>
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div id="step-3">
+                                    <h2 class="StepTitle">Step 3 Content</h2>
+                                    <p>
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div id="step-4">
+                                    <h2 class="StepTitle">Step 4 Content</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <!-- End SmartWizard Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.page content -->
+
+        <!-- 页脚 -->
+        <footer>
+            <div class="pull-right">
+                copyright by miaque
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /.页脚 -->
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="static/javascripts/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="static/javascripts/bootstrap/bootstrap.min.js"></script>
+<!-- jQuery Smart Wizard -->
+<script src="static/javascripts/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+<!-- 自定义公用类Scripts -->
+<script src="static/javascripts/custom.js"></script>
+<!-- 自定义Scripts -->
+<!--<script type="text/javascript" src="js/main.js"></script>-->
+<script type="text/javascript">
+    /*-- jQuery Smart Wizard--*/
+    $(document).ready(function() {
+        $('#wizard').smartWizard();
+
+        $('.buttonNext').addClass('btn btn-success');
+        $('.buttonPrevious').addClass('btn btn-primary');
+        $('.buttonFinish').addClass('btn btn-default');
+    });
+    <!-- /jQuery Smart Wizard -->
+</script>
+</body>
+</html>

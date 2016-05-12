@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div ng-controller="myController">
+    <p>user profile</p>
+    <form method="post" action="/user/update">
+        <label>Username:</label>
+        <input type="text" name="username" ng-model="user.name" disabled><br>
+        <label>Email:</label>
+        <input type="email" name="email" ng-model="user.mail"><br>
+        <label>city:</label>
+        <input type="text" name="city" ng-model="user.city">
+        <input type="submit" value="save">
+    </form>
+</div>
+<form method="post" action="/user/delete">
+    <input type="submit" value="Delete User">
+</form>
+<hr>
+<%= msg %>
+<hr>
+{{error}}
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="/static/js/my_app.js"></script>
+</body>
+</html>
